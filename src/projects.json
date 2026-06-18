@@ -1,0 +1,10 @@
+{
+    "projects" : [
+        {
+            "id" : 1,
+            "name" : "Name 1",
+            "desc" : "This is a description of the movie 1",
+            "tags" : "test-tag, test-tag2, test-tag3"
+        }
+    ]
+}
