@@ -2,9 +2,59 @@
     "projects" : [
         {
             "id" : 1,
-            "name" : "Name 1",
-            "desc" : "This is a description of the movie 1",
-            "tags" : "test-tag, test-tag2, test-tag3"
+            "name" : "React Native Super App",
+            "desc" : "A barcode scanner, ledger and ATM finder",
+            "longDesc" : "This is a Super App made with React Native using Expo Go. It contains three different views: A barcode scanner made with Expo Camera, a simple ledger and an ATM finder that uses the device's location and a static JSON file containing the data of the ATM's.",
+            "tags" : "React Native,TypeScript,Expo,Mobile,School project,Frontend",
+            "url" : "https://github.com/mywebsitearchive/super-app-reactnative"
+        },
+        {
+            "id" : 2,
+            "name" : "Chess Ratings (Frontend)",
+            "desc" : "A program made for visualising ratings of chess players",
+            "longDesc" : "A frontend version of a program made for visualising ratings of Lichess players. It sends requests to the Lichess API, which returns the rating histories of an account. Initially a full stack program, it was modified to a frontend site hosted on GitHub Pages. The [deployment](https://mywebsitearchive.github.io/chessratings-frontend/) is made using GitHub Actions.",
+            "tags" : "API,TypeScript,React,Vite,Material UI,Frontend,Hosted online,GitHub Actions,GitHub Pages",
+            "url" : "https://github.com/mywebsitearchive/chessratings-frontend"
+        },
+        {
+            "id" : 3,
+            "name" : "Kotlin Tennis Score Tracker",
+            "desc" : "An Android exclusive tennis score tracker app made in Kotlin",
+            "longDesc" : "My first project in Kotlin. I built this app in Android Studio, using my phone for debugging. It features a score tracker for a single tennis set and an undo function.",
+            "tags" : "Kotlin,Mobile,Frontend,Android",
+            "url" : "https://github.com/mywebsitearchive/first-kotlin-project"
+        },
+        {
+            "id" : 4,
+            "name" : "Chess Ratings (Full Stack)",
+            "desc" : "Full stack app for comparing Lichess ratings, made with Express.js, Vite and Prisma ORM",
+            "longDesc" : "A program made for visualising ratings of Lichess players. The GUI, built with Vite using MUI X Charts, sends requests to the Express.js server, which in turn sends requests to the Lichess API and the Prisma ORM database.",
+            "tags" : "API,TypeScript,React,Vite,Material UI,Backend,Express,Prisma,SQL,School project",
+            "url" : "https://github.com/mywebsitearchive/chessratings-fullstack"
+        },
+        {
+            "id" : 5,
+            "name" : "Math Game",
+            "desc" : "GUI math game made with Tkinter in Python",
+            "longDesc" : "Inspired by [Countdown](https://en.wikipedia.org/wiki/Countdown_(game_show)#Numbers_round), the player tries to reach a number using basic mathematical operations in as few tries as possible. It features a backspace function to undo previous inputs.",
+            "tags" : "Python,Tkinter,Game",
+            "url" : "https://github.com/mywebsitearchive/python-math-game"  
+        },
+        {
+            "id" : 6,
+            "name" : "Discipline Tracker",
+            "desc" : "A daily schedule planner, To Do list and habit tracker.",
+            "longDesc" : "Mode 1: Plan your day by adding tasks to a list. The UI will show how much you have left until the next one. Mode 2: Add To Do's with a specified interval (7 days by default) to a list. The app shows how many days are remaining, and the timer can be reset once a task is completed. Mode 3: Add habits that you plan to break. It will show you how many days have passed, with the option to reset the timer. [Hosted online](https://mywebsitearchive.github.io/dailyschedule/).",
+            "tags" : "JavaScript,Frontend,Hosted online,HTML,CSS",
+            "url" : "https://mywebsitearchive.github.io/dailyschedule/"
+        },
+        {
+            "id" : 7,
+            "name" : "Automated Testing",
+            "desc" : "Simple Selenium tests for the Discipline Tracker made in C# and JavaScript.",
+            "longDesc" : "Inspired by a previous course on Robot Software, this repository has six tests for the Discipline Tracker written in both C# and JavaScript.",
+            "tags" : "Selenium,Testing,C#,JavaScript",
+            "url" : "https://github.com/mywebsitearchive/selenium-example"
         }
     ]
 }

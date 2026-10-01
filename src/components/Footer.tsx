@@ -1,7 +1,11 @@
 const Footer = () => {
     return(
         <>
-            <div>This is a footer div.</div>
+            <div id="footer">
+                <p>
+                © 2026 <a target="_blank" href="https://github.com/mywebsitearchive">mywebsitearchive</a>
+                </p>
+            </div>
         </>
     )
 }

@@ -1,13 +1,137 @@
+@media screen and (max-width: 750px) { /* mobile view, hide columns */
+    #column1, #column2{
+        display: none;
+    }
+}
+@media screen and (min-width: 751px) { /* desktop view, hide single column */
+    #singlecolumn{
+        display: none;
+    }
+}
+#column1, #column2{
+    width: 46%;
+    margin: 2%;
+    float: left;
+}
 body{
     background-color: rgb(20, 20, 20);
     margin-top: 0;
-    color: rgb(100, 220, 120);
+    color: rgb(170, 250, 170);
+    margin: auto;
+    font-family: "Ubuntu";
 }
 #root{
-    margin: auto;
+    margin-left: 5%;
+    float: left;
     width: 90%;
+    height: 100%;
     background-color: rgb(50, 50, 50);
+    border: 2px rgb(90, 90, 90) solid;
 }
 .project{
-    width: 300px;
+    background-color: rgb(40, 40, 40);
+    width: 100%;
+    margin-bottom: 20px;
+    border: 2px rgb(90, 90, 90) solid;
+    border-radius: 12px;
+    color: rgb(170, 250, 170);
+    float: left;
+    cursor: pointer;
+}
+#footer, #header{
+    width: 100%;
+    float: left;
+}
+#footer{
+    height: 100px;
+}
+#header{
+    margin-bottom: 30px;
+}
+.project-header{
+    text-align: center;
+}
+.project-text{
+    margin-left: 10px;
+}
+.tag{
+    background-color: rgb(70, 70, 70);
+    border: 1px rgb(90, 90, 90) solid;
+    height: 25px;
+    line-height: 25px;
+    float: left;
+    margin: 8px;
+    margin-top: 0;
+    padding: 5px;
+    border-radius: 4px;
+}
+.tag-row{
+    float: left;
+    width: 100%;
+    overflow: hidden;
+}
+.tag-button{
+    float: left;
+    border: 1px rgb(90, 90, 90) solid;
+    color: rgb(170, 250, 170);
+    height: 30px;
+    padding: 0 20px 0 20px;
+    background-color: rgb(70, 70, 70);
+    border-radius: 5px;
+    margin: 10px;
+}
+button:active{
+    background-color: rgb(90, 90, 90);
+}
+button:hover{
+    cursor: pointer;
+}
+.dialog{
+    position: absolute;
+    margin-left: 5vw;
+    margin-top: 3vh;
+    width: 70vw;
+    background-color: rgb(60, 60, 60);
+    border-radius: 20px;
+    border: 3px rgb(80, 80, 80) solid;
+    padding: 5vw;
+    z-index: 2;
+}
+.github-link{
+    float: left;
+    border: 1px rgb(90, 90, 90) solid;
+    color: rgb(170, 250, 170);
+    line-height: 50px;
+    padding: 0 20px 0 20px;
+    background-color: rgb(70, 70, 70);
+    border-radius: 5px;
+    margin: 10px;
+    font-size: 35px;
+}
+.tag-button:hover{
+    background-color: rgb(70, 110, 70) !important;
+}
+.dialog-top{
+    width: 100%;
+    overflow: hidden;
+}
+.close-window{
+    border: 1px rgb(90, 90, 90) solid;
+    color: rgb(250, 170, 170);
+    height: 30px;
+    width: 100%;
+    padding: 0 20px 0 20px;
+    background-color: rgb(70, 70, 70);
+    border-radius: 5px;
+    margin: 10px;
+}
+a{
+    color: rgb(0, 255, 0);
+}
+#footer p{
+    text-align: center;
+    height: 100px;
+    line-height: 100px;
+    margin: 0;
+    text-decoration: none;
 }
