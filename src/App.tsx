@@ -70,6 +70,7 @@ function App() {
   }
   const [clickedTags, setClickedTags] = useState<string[]>([]);
   const [showProject, setShowProject] = useState<number>(-1);
+  const [showMobileTags, setShowMobileTags] = useState<boolean>(false);
   const updateClickedTags=(tag : string, empty : boolean)=>{
     console.log(undefined != true, undefined == !true, !empty)
       if(clickedTags.includes(tag)){
@@ -120,6 +121,7 @@ function App() {
       showProject >= 0 &&
       <>
         <ProjectDialog
+          setShowMobileTags={setShowMobileTags}
           tagList={getProjectTags(projects[showProject-1])}
           longDesc={projects[showProject-1].longDesc}
           updateClickedTags={updateClickedTags}
@@ -135,6 +137,8 @@ function App() {
     }
       <div id='container' style={showProject >= 0 ? {filter: "blur(10px)"} : {}}>
         <Header
+          showMobileTags={showMobileTags}
+          setShowMobileTags={setShowMobileTags}
           tagList={getTagList(projects)}
           clickedTags={clickedTags}
           updateClickedTags={updateClickedTags}

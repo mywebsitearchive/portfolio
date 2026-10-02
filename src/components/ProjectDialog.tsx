@@ -8,8 +8,8 @@ interface Hyperlink {
 }
 
 const ProjectDialog = (
-    {name, longDesc, tagList, url, updateClickedTags, setShowProject} :
-    {name : string, longDesc : string, tagList : Tag[], url : string, updateClickedTags : any, setShowProject : any}) => {
+    {name, longDesc, tagList, url, updateClickedTags, setShowProject, setShowMobileTags} :
+    {name : string, longDesc : string, tagList : Tag[], url : string, updateClickedTags : any, setShowProject : any, setShowMobileTags : any}) => {
 
     const isHyperLink=(text : string)=>{
         if(text.search(/\[[^\]]+\]\([^\)]+\)/g) == -1){
@@ -57,7 +57,7 @@ const ProjectDialog = (
                         tagList.map((t : Tag)=>{
                             return(
                                 <button
-                                    onClick={()=>{updateClickedTags(t.name, true); setShowProject(-1)}}
+                                    onClick={()=>{updateClickedTags(t.name, true); setShowProject(-1); setShowMobileTags(true)}}
                                     className="tag-button"
                                     key={t.id}
                                     style={{backgroundColor:"rgb(70, 70, 70)"}}

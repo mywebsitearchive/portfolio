@@ -1,33 +1,10 @@
-import { useState } from "react";
-import type { Tag } from "../App";
-import TagRow from "./TagRow";
-const Header = (
-    {tagList, clickedTags, updateClickedTags, showMobileTags, setShowMobileTags} :
-    {tagList : Tag[], clickedTags : any, updateClickedTags : any, showMobileTags : any, setShowMobileTags : any}) => {
-    const [showFewerTags, setShowFewerTags] = useState<boolean>(true);
+import type { Tag } from "../App"
+
+const TagRow = ({tagList, updateClickedTags, clickedTags, showFewerTags, setShowFewerTags} : {tagList: Tag[], updateClickedTags: any, clickedTags: string[], showFewerTags: any, setShowFewerTags: any}) => {
     return(
-        <>
-            <div id="header">
-                <TagRow
-                    tagList = {tagList}
-                    updateClickedTags = {updateClickedTags}
-                    clickedTags = {clickedTags}
-                    showFewerTags = {showFewerTags}
-                    setShowFewerTags = {setShowFewerTags}
-                />
-            </div>
-            <div id="mobileheader">
-                <button
-                    className="tag-button"
-                    style={{color:"white"}}
-                    onClick={()=>{setShowMobileTags(!showMobileTags)}}
-                >
-                    {showMobileTags ? "Hide tags" : "Show tags"}
-                </button>
-                {showMobileTags && 
-                <div id="tag-row">
-                    {tagList &&
-                    <>
+        <div id="tag-row">
+            {tagList &&
+            <>
                         <button
                             onClick={()=>updateClickedTags("", true)}
                             className="tag-button"
@@ -101,12 +78,9 @@ const Header = (
                                 Show fewer</button>
                             
                         }
-                    </>
-                    }
-                </div>
-                }
-            </div>
-        </>
+            </>
+            }
+        </div>
     )
 }
-export default Header;
+export default TagRow;
